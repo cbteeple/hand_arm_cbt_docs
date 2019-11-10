@@ -57,7 +57,7 @@ search_enabled: true
 use_font_awesome: true
 # Aux links for the upper right navigation
 aux_links:
-    "Project on Github":
+    'View on Github <i style="font-size:2.0em;" class="fab fa-github"></i>':
       - "//github.com/cbteeple/hand_arm_cbt"
 # Color scheme currently only supports "dark" or nil (default)
 # color_scheme: "dark"

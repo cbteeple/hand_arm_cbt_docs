@@ -10,6 +10,6 @@ font_awesome: "fas fa-tasks"
 
 Take a look at the current issues with this package, and feel free to request more features!
 
-[Current Issues](https://github.com/cbteeple/hand_arm_cbt/issues){: .btn .btn-blue}
+[Current Issues](https://github.com/cbteeple/hand_arm_cbt/issues){: .btn}
 
 

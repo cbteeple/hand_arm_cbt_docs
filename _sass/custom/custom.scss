@@ -1,16 +1,16 @@
+
 $cbt-blue: #32B0FF;
 
-$light-blue: #dbf1ff;
 
-$cbt-bright-blue: #A5DEFF;
-$cbt-dark-blue: #004872;
-$cbt-vermillion-color: #F24333;
-$cbt-orange-yellow: #E98A15;
+
+
+$base-color: $cbt-blue;
+
 $nav-child-link-color: $grey-dk-100;
-$btn-primary-color: $cbt-blue;
+$btn-primary-color: $base-color;
 //$base-button-color: #f7f7f7;
-$link-color: $cbt-blue;
-//$body-heading-color: $cbt-blue;
+$link-color: $base-color;
+//$body-heading-color: $base-color;
 
 $body-font-family: "Lato", -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
 
@@ -48,15 +48,16 @@ code{
 
 
 
+
 //Nav Bar Stuff
 
 .navigation-list-link.active{
-	background-color: $cbt-blue;
+	background-color: $base-color;
 	color: #FFF !important;
 }
 
 .navigation-list-link.active:hover{
-	background-color: $cbt-blue;
+	background-color: $base-color;
 	color: #FFF !important;
 }
 

@@ -1,5 +1,7 @@
 $cbt-blue: #32B0FF;
 
+$light-blue: #dbf1ff;
+
 $cbt-bright-blue: #A5DEFF;
 $cbt-dark-blue: #004872;
 $cbt-vermillion-color: #F24333;
@@ -26,15 +28,25 @@ $content-line-height: 1.25;
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4{font-weight: bolder;}
 
-.navigation-list-link.active {
+.navigation-list-link.active{
+	background-color: $cbt-blue;
+	color: #FFF !important;
+}
+
+.navigation-list-link.active:hover{
+	background-color: $cbt-blue;
+	color: #FFF !important;
+}
+
+.navigation-list-link:hover{
 	background-color: $grey-lt-200;
 }
 
 .navigation-list-link{
 	padding-left: 0.7em;
-	border-radius: 20px;
-	border-top-right-radius: 0px;
-	border-bottom-right-radius: 0px;
+	border-radius: 1.0em;
+	//border-top-right-radius: 0px;
+	//border-bottom-right-radius: 0px;
 }
 
 .navigation-list-child-list .navigation-list-link{
@@ -43,6 +55,11 @@ $content-line-height: 1.25;
 
 .navigation-list-item::before{
 	padding-left: 1.4em;
+}
+
+
+.navigation-list-item.active::before{
+	color: #FFF !important;
 }
 
 

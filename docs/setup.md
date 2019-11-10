@@ -39,4 +39,4 @@ nav_order: 2
 
 
 ## Usage
-This package enables basic robot motion, and coordination of the arm with the hand. See the [Tutorials](/tutorials) section for step-by-steps.
+This package enables basic robot motion, and coordination of the arm with the hand. See the [Tutorials](tutorials) section for step-by-steps.

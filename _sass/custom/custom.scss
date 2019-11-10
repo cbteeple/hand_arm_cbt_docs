@@ -71,3 +71,7 @@ code{
 	width: 60px !important;
     height: 100% !important;
 }
+
+.main-content-wrap, html{
+	scroll-behavior: smooth;
+}

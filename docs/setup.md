@@ -4,10 +4,11 @@ title: Setup
 has_children: false
 permalink: setup
 nav_order: 2
+font_awesome: "fas fa-cog"
 ---
 
 
-# {{ page.title }}
+# <i class="{{ page.font_awesome }}"></i> {{ page.title }}
 
 
 ## Dependencies

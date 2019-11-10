@@ -54,6 +54,7 @@ kramdown:
 
 # Enable or disable the site search
 search_enabled: true
+use_font_awesome: true
 # Aux links for the upper right navigation
 aux_links:
     "Project on Github":

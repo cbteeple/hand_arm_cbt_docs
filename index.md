@@ -6,6 +6,7 @@ layout: home
 title: Home
 nav_order: 1
 permalink: '/'
+font_awesome: "fas fa-home"
 ---
 
 # {{ site.title }}

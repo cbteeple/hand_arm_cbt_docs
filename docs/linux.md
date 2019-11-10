@@ -3,9 +3,10 @@ layout: default
 title: Linux Tips
 permalink: linux
 nav_order: 4
+font_awesome: "fas fa-terminal"
 ---
 
-# {{ page.title }}
+# <i class="{{ page.font_awesome }}"></i> {{ page.title }}
 
 ---
 

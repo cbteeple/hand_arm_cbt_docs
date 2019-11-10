@@ -4,10 +4,11 @@ title: Tutorials
 has_children: true
 permalink: tutorials
 nav_order: 3
+font_awesome: "fas fa-laptop-code"
 ---
 
 
-# How to use this package
+# <i class="{{ page.font_awesome }}"></i> How to use this package
 {: .no_toc }
 
 All tutorials assume you have followed the instuctions from [system startup](/tutorials/system_startup)

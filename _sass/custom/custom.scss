@@ -22,11 +22,33 @@ $content-line-height: 1.25;
 
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,900);
 
+
+// Site Stuff
+
+.site-logo{
+	width: 60px !important;
+    height: 100% !important;
+}
+
+.main-content-wrap, html{
+	scroll-behavior: smooth;
+}
+
+
 .site-title {
     font-weight: bold;
 }
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4{font-weight: bolder;}
+
+code{
+	font-size: 14px !important;
+}
+
+
+
+
+//Nav Bar Stuff
 
 .navigation-list-link.active{
 	background-color: $cbt-blue;
@@ -63,15 +85,14 @@ $content-line-height: 1.25;
 }
 
 
-code{
-	font-size: 14px !important;
+//FontAwesome Stuff
+.svg-inline--fa{
+	margin-right: 10px;
+	width:1.0em;
 }
 
-.site-logo{
-	width: 60px !important;
-    height: 100% !important;
+.nav-icons{
+	display: inline-block;
+	width:30px;
 }
 
-.main-content-wrap, html{
-	scroll-behavior: smooth;
-}

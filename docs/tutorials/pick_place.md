@@ -56,7 +56,7 @@ Other optional things:
 	- **arm** (_optional_, default: true) Use on the arm
 
 
-## Define Waypoints in Joint Space:
+## Define Waypoints in Joint Space
 You can set up pick-and-place routines using joint configurations directly. 
 1. Build an routine manually
 	- Open "**_trajectories/examples/manually_built/joint_traj.yaml_**" in a text editor

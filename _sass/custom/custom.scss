@@ -1,5 +1,6 @@
-
 $cbt-blue: #32B0FF;
+$cbt-green: #00b050;
+$cbt-orange: #e65c00;
 
 
 
@@ -91,5 +92,10 @@ $content-line-height: 1.25;
 .nav-icons{
 	display: inline-block;
 	width:30px;
+}
+
+.nav-carrot{
+	display: inline-block;
+	margin-left: 10px;
 }
 

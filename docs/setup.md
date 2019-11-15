@@ -35,7 +35,7 @@ font_awesome: "fas fa-cog"
 	
 ## Installation
 
-[Download the ROS Package](https://github.com/cbteeple/pressure_controller){: .btn .btn-primary}
+[Download the ROS Package](https://github.com/cbteeple/hand_arm_cbt){: .btn .btn-primary}
 
 1. This is a ROS package, so you should be working out of a [catkin workspace](http://wiki.ros.org/catkin/workspaces)
 1. Add this package to your `[WORKSPACE NAME]/src` folder.

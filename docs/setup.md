@@ -34,6 +34,9 @@ font_awesome: "fas fa-cog"
 	- [yaml](https://pyyaml.org/wiki/PyYAMLDocumentation) (`pip install pyyaml`)
 	
 ## Installation
+
+[Download the ROS Package](https://github.com/cbteeple/pressure_controller){: .btn .btn-primary}
+
 1. This is a ROS package, so you should be working out of a [catkin workspace](http://wiki.ros.org/catkin/workspaces)
 1. Add this package to your `[WORKSPACE NAME]/src` folder.
 2. In a new terminal, run `catkin_make` from your workspace directory to enable the custom python modules in this package to work

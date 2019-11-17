@@ -45,6 +45,7 @@ This allows you to debug better since you can see error messages from each major
 If you don't want to start all of these programs independently, you can write a bash script to start everything.
 
 1. Write a script called "bringup-hw.sh" in your main workspace folder:
+
 ```bash
 #!/bin/bash
 
@@ -67,6 +68,7 @@ wait $(jobs -p)
 ```
 
 2. bringup-planning.sh
+
 ```bash
 #!/bin/bash
 
@@ -82,6 +84,7 @@ wait $(jobs -p)
 
 
 3. pick-place-build-plan.sh
+
 ```bash
 #!/bin/bash
 
@@ -98,6 +101,7 @@ fi
 ```
 
 Now you've reduced the bringup process for the arm to just one command:
+
 ```bash
 bash bringup-hw.sh anthro4
 bash bringup-planning.sh

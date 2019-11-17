@@ -100,7 +100,7 @@ else
 fi
 ```
 
-Now you've reduced the bringup process for the arm and hand to 3 commands:
+Now you've reduced the bringup process for the arm and hand to 1 command, with two additional commands when you need to build and plan:
 
 ```bash
 bash bringup-hw.sh anthro4

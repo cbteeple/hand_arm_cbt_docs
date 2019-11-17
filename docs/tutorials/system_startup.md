@@ -42,9 +42,9 @@ This allows you to debug better since you can see error messages from each major
         - `roslaunch ur5_e_moveit_config moveit_rviz.launch config:=true`
 
 ### Write a few bash scripts
-If you don't want to start all of these programs independently, you can write a bash script to start everything.
+If you don't want to start all of these programs independently, you can write a bash script to start everything. Write a few scripts in your main workspace folder:
 
-1. Write a script called "bringup-hw.sh" in your main workspace folder:
+#### bringup-hw.sh
 
 ```bash
 #!/bin/bash
@@ -67,7 +67,7 @@ sleep 1
 wait $(jobs -p)
 ```
 
-2. bringup-planning.sh
+#### bringup-planning.sh
 
 ```bash
 #!/bin/bash
@@ -83,7 +83,7 @@ wait $(jobs -p)
 
 
 
-3. pick-place-build-plan.sh
+#### pick-place-build-plan.sh
 
 ```bash
 #!/bin/bash

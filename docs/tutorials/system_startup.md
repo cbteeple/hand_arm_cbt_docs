@@ -41,21 +41,68 @@ This allows you to debug better since you can see error messages from each major
         - `roslaunch ur5_e_moveit_config ur5_e_moveit_planning_execution.launch sim:=true`
         - `roslaunch ur5_e_moveit_config moveit_rviz.launch config:=true`
 
-### Write a bash script
-If you don't want to start all of these programs independently, you can write a bash script to start everything. Write a script called "arm_bringup.sh" in your main workspace folder:
+### Write a few bash scripts
+If you don't want to start all of these programs independently, you can write a bash script to start everything.
+
+1. Write a script called "bringup-hw.sh" in your main workspace folder:
 ```bash
-roscore &
-sleep 0.5
-roslaunch ur_modern_driver ur5e_bringup.launch limited:=true robot_ip:=192.168.1.2 &
-sleep 0.5
+#!/bin/bash
+
+    roscore &
+	sleep 1
+	roslaunch ur_modern_driver ur5e_bringup.launch limited:=true robot_ip:=192.168.1.2 &
+	sleep 1
+	roslaunch rosbag_recorder rosbag_recorder.launch pickle:=true &
+	sleep 1
+
+if [ "$1" != "" ]; then
+	roslaunch hand_arm hand_bringup.launch profile:=$1 &
+else
+    roslaunch hand_arm hand_bringup.launch profile:=anthro4 &
+    echo "Sending anthro4 configuration to pressure controller "
+fi
+
+sleep 1
+wait $(jobs -p)
+```
+
+2. bringup-planning.sh
+```bash
+#!/bin/bash
+
 roslaunch ur5_e_moveit_config ur5_e_moveit_planning_execution.launch limited:=false &
-sleep 0.5
+sleep 1
 roslaunch ur5_e_moveit_config moveit_rviz.launch config:=true &
-wait
-echo 'All UR5e servers are finished'
+sleep 1
+
+wait $(jobs -p)
+```
+
+
+
+
+3. pick-place-build-plan.sh
+```bash
+#!/bin/bash
+
+if [ "$1" != "" ]; then
+	roslaunch hand_arm pick-place-build-multi.launch traj:=$1
+	wait
+	echo "Done Building"
+	roslaunch hand_arm pick-place-plan-multi.launch traj:=$1
+	wait
+	echo "Done Planning"
+else
+    echo "Please input a trajectory to build/plan"
+fi
 ```
 
 Now you've reduced the bringup process for the arm to just one command:
 ```bash
-bash launch_all.sh
+bash bringup-hw.sh anthro4
+bash bringup-planning.sh
+bash pick-place-build-plan.sh example/2finger_grid
 ```
+
+
+

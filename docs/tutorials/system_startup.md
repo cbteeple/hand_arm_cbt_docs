@@ -100,7 +100,7 @@ else
 fi
 ```
 
-Now you've reduced the bringup process for the arm to just one command:
+Now you've reduced the bringup process for the arm and hand to 3 commands:
 
 ```bash
 bash bringup-hw.sh anthro4

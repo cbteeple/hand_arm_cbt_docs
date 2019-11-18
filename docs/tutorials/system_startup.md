@@ -56,7 +56,7 @@ If you don't want to start all of these programs independently, you can write so
 ### Bringup all hardware
 This script starts the ROS servers that handle the arm, hand, and data saving. If you just want to run some trajectories that are already built and planned, you only need these running.
 
-[bringup-hw.sh]( {{ "assets/files/bringup-hw.sh" | absolute_url }} ){: .btn}
+[<i class="fas fa-file-alt"></i> bringup-hw.sh]( {{ "assets/files/bringup-hw.sh" | absolute_url }} ){: .btn}
 
 
 ```bash
@@ -83,7 +83,7 @@ wait $(jobs -p)
 ### Bringup the planning interface
 If you need to build and plan tajectories, you need to start MoveIt! and RViz in addition to bringing up the hardware.
 
-[bringup-planning.sh]( {{ "assets/files/bringup-planning.sh" | absolute_url }} ){: .btn}
+[<i class="fas fa-file-alt"></i> bringup-planning.sh]( {{ "assets/files/bringup-planning.sh" | absolute_url }} ){: .btn}
 
 
 ```bash
@@ -103,7 +103,7 @@ wait $(jobs -p)
 ### Build and plan all at once
 The build and plan steps incolve typing the trajectory name for both. This script allows you to build, then plan all at once.
 
-[pick-place-build-plan.sh]( {{ "assets/files/pick-place-build-plan.sh" | absolute_url }} ){: .btn}
+[<i class="fas fa-file-alt"></i> pick-place-build-plan.sh]( {{ "assets/files/pick-place-build-plan.sh" | absolute_url }} ){: .btn}
 
 
 ```bash

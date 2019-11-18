@@ -118,6 +118,7 @@ else
 fi
 ```
 
+### The result: easy quick-start
 Now you've reduced the bringup process for the arm and hand to only **one command**, with two additional commands when you need to build and plan:
 
 ```bash

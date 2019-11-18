@@ -50,10 +50,10 @@ _(Note, pickling could take a long time if you're saving large amounts of data)_
 
 
 
-### Automate the bringup process
+## Automate the bringup process
 If you don't want to start all of these programs independently, you can write some bash scripts to start everything. Write a few scripts in your main workspace folder:
 
-#### Bringup all hardware
+### Bringup all hardware
 This script starts the ROS servers that handle the arm, hand, and data saving. If you just want to run some trajectories that are already built and planned, you only need these running.
 
 `bringup-hw.sh`
@@ -79,7 +79,7 @@ sleep 1
 wait $(jobs -p)
 ```
 
-#### Bringup the planning interface
+### Bringup the planning interface
 If you need to build and plan tajectories, you need to start MoveIt! and RViz in addition to bringing up the hardware.
 
 `bringup-planning.sh`
@@ -98,7 +98,7 @@ wait $(jobs -p)
 
 
 
-#### Build and plan all at once
+### Build and plan all at once
 The build and plan steps incolve typing the trajectory name for both. This script allows you to build, then plan all at once.
 
 `pick-place-build-plan.sh`

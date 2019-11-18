@@ -19,12 +19,13 @@ font_awesome: "fas fa-cog"
 
 ### Software:
 - [ROS Melodic](http://wiki.ros.org/melodic/Installation)
-	- My [pressure_control_cbt](https://github.com/cbteeple/pressure_control_cbt) package for ROS
-	- My version of [rosbag_recorder](https://github.com/cbteeple/rosbag-recorder) for ROS
 	- The [ur_modern_driver](https://github.com/plusone-robotics/ur_modern_driver/tree/add-e-series-support) ROS package with e-series support (by plusone robotics)
-	- The [bond](https://github.com/ros/bond_core) package for ROS
+	- My [pressure_control_cbt](https://github.com/cbteeple/pressure_control_cbt) package for ROS
 	- [ROS Industrial](http://wiki.ros.org/Industrial/Install) package `apt-get install ros-melodic-industrial-core`
 	- [MoveIt!](http://docs.ros.org/kinetic/api/moveit_tutorials/html/index.html) motion planning package
+	- The [bond](https://github.com/ros/bond_core) package for ROS
+	- My version of [rosbag_recorder](https://github.com/cbteeple/rosbag-recorder) for saving data in ROS
+	- My [rosbag-pickle-graph](https://github.com/cbteeple/rosbag-pickle-graph) package for processing saved data
 - Various python libraries:
 	- [scipy](https://www.scipy.org/) (`pip install scipy`)
 	- [numpy](https://www.numpy.org/) (`pip install numpy`)

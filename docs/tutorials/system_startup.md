@@ -26,8 +26,6 @@ Determine what config profile to use (we'll use "**anthro7**" for these tutorial
 ## Bringup the arm
 Before you can control the robot arm, you first need to start some ROS servers.
 
-### Do this in separate terminals
-This allows you to debug better since you can see error messages from each major program independently.
 - Start roscore
     - `roscore`
 - Start the robot control server
@@ -41,10 +39,24 @@ This allows you to debug better since you can see error messages from each major
         - `roslaunch ur5_e_moveit_config ur5_e_moveit_planning_execution.launch sim:=true`
         - `roslaunch ur5_e_moveit_config moveit_rviz.launch config:=true`
 
-### Write a few bash scripts
-If you don't want to start all of these programs independently, you can write a bash script to start everything. Write a few scripts in your main workspace folder:
 
-#### bringup-hw.sh
+## Bringup the data recording service
+By default, data is recorded in ROS's "bag" format, which is hard to interact with later. Instead, you should pickle the data so that it can be efficiently stored and processed later:
+
+`roslaunch rosbag_recorder rosbag_recorder.launch pickle:=true`
+
+_(Note, pickling could take a long time if you're saving large amounts of data)_
+
+
+
+
+### Automate the bringup process
+If you don't want to start all of these programs independently, you can write some bash scripts to start everything. Write a few scripts in your main workspace folder:
+
+#### Bringup all hardware
+This script starts the ROS servers that handle the arm, hand, and data saving. If you just want to run some trajectories that are already built and planned, you only need these running.
+
+`bringup-hw.sh`
 
 ```bash
 #!/bin/bash
@@ -67,7 +79,10 @@ sleep 1
 wait $(jobs -p)
 ```
 
-#### bringup-planning.sh
+#### Bringup the planning interface
+If you need to build and plan tajectories, you need to start MoveIt! and RViz in addition to bringing up the hardware.
+
+`bringup-planning.sh`
 
 ```bash
 #!/bin/bash
@@ -83,7 +98,10 @@ wait $(jobs -p)
 
 
 
-#### pick-place-build-plan.sh
+#### Build and plan all at once
+The build and plan steps incolve typing the trajectory name for both. This script allows you to build, then plan all at once.
+
+`pick-place-build-plan.sh`
 
 ```bash
 #!/bin/bash

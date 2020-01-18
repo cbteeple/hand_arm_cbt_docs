@@ -15,7 +15,7 @@ nav_order: 4
 
 We will use the files located in "**_traj_setup/examples_**" and "**_trajectories/examples_**". When you pass the names of these files to ROS in the `roslaunch` command, you never need to use file extensions.
 
-Pick-and-place routines are just a specific ordering of [coordinated motion sequences](/tutorials/motion_sequences)
+Pick-and-place routines are just a specific ordering of [coordinated motion sequences]({{"/tutorials/motion_sequences" | absolute_url}} )
 
 ## Define Waypoints in Cartesian Space
 You can set up pick-and-place routine using cartesian poses, then use MoveIt! to do the IK and motion planning. 
@@ -29,7 +29,7 @@ You can set up pick-and-place routine using cartesian poses, then use MoveIt! to
 	- `roslaunch hand_arm pick-place-build-multi.launch traj:=examples/2finger_grid` Build a family of trajectories
 
 2. Plan a routine
-	- _This requires that you bring up the robot and start MoveIt! See [System Startup](/tutorials/system_startup). One the planning step is finished, you don't need MoveIt! running._
+	- _This requires that you bring up the robot and start MoveIt! See [System Startup]({{"/tutorials/system_startup" | absolute_url}}). One the planning step is finished, you don't need MoveIt! running._
 	- Plan a single trajectory: `roslaunch hand_arm pick-place-plan-multi.launch traj:=examples/2finger_single`
 	- Plan a grid: `roslaunch hand_arm pick-place-plan-multi.launch traj:=examples/2finger_grid` Build a family of trajectories
 	- These commands use MoveIt! to plan trajectories based on poses, then save the resulting joint-space trajectories.

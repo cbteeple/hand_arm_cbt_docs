@@ -11,7 +11,7 @@ font_awesome: "fas fa-laptop-code"
 # <i class="{{ page.font_awesome }}"></i> How to use this package
 {: .no_toc }
 
-All tutorials assume you have followed the instuctions from [system startup](/tutorials/system_startup)
+All tutorials assume you have followed the instuctions from [system startup]({{"/tutorials/system_startup" | absolute_url}})
 
 We will use the files located in "**_traj_setup/examples_**" and "**_trajectories/examples_**". When you pass the names of these files to ROS in the `roslaunch` command, you never need to use file extensions.
 

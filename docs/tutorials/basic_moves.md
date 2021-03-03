@@ -43,7 +43,8 @@ When using teach mode, the robot will be put into freedrive mode, enabling you t
    - In this mode, use the space bar to save the current position as a point in the trajectory.
 
 - Replay a trajectory:
-   - `rosrun hand_arm replay.py [FILENAME]`
+   - `rosrun hand_arm replay.py [FILENAME] [SPEED FACTOR]`
+   - "speed factor" is a multiplier on the speed (i.e. 0.5 is half speed, 2.0 is double). _If you increase the speed, the robot becomes less accurate (i.e. it's not able to move fast enough to get to every waypoint). **Use the speed factor at your own risk**_
 
 
 ### Run a trajectory on the arm

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Coordinated Motion Sequences
-parent: Tutorials
+title: Motion Sequences
+parent: Basic Tutorials
 permalink: /tutorials/motion_sequences
 nav_order: 3
 ---

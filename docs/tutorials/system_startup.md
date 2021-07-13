@@ -1,7 +1,7 @@
 ---
 layout: default
 title: System Startup
-parent: Tutorials
+parent: Basic Tutorials
 permalink: /tutorials/system_startup
 nav_order: 1
 ---

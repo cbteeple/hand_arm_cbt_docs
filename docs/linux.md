@@ -2,7 +2,7 @@
 layout: default
 title: Linux Tips
 permalink: linux
-nav_order: 4
+nav_order: 5
 font_awesome: "fas fa-terminal"
 ---
 

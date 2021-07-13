@@ -25,3 +25,16 @@ $cbt-cyan:   #00b3d6;
 .btn-cbt-cyan {
   @include btn-color($body-background-color, $cbt-cyan);
 }
+
+kbd {
+  display: inline-block;
+  border: 1px solid $grey-dk-000;
+  border-bottom-width: 2px;
+  border-radius: 0.25em;
+  padding: 0.2em 0.35em;
+  padding-bottom: 0.05em;
+  background: $grey-lt-000;
+  font-family: Consolas, "Lucida Console", monospace;
+  font-weight: bold;
+  box-shadow: 0 0 0 2px #fff inset;
+}

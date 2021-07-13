@@ -1,12 +1,13 @@
 ---
 layout: default
-title: Pick-and-Place
-parent: Tutorials
-permalink: /tutorials/pick_place
+title: Pick and Place
+permalink: pick_and_place
+has_children: true
 nav_order: 4
+font_awesome: "fas fa-hand-pointer"
 ---
 
-# {{ page.title }}
+# <i class="{{ page.font_awesome }}"></i> {{ page.title }}
 
 1. TOC
 {:toc}

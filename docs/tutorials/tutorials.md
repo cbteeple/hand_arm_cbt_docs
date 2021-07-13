@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tutorials
+title: Basic Tutorials
 has_children: true
 permalink: tutorials
 nav_order: 3

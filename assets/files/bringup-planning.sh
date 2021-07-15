@@ -1,8 +1,9 @@
 #!/bin/bash
 
-roslaunch ur5_e_moveit_config ur5_e_moveit_planning_execution.launch limited:=false &
+roslaunch ${1}_moveit_config ${1}_moveit_planning_execution.launch limited:=false &
 sleep 1
-roslaunch ur5_e_moveit_config moveit_rviz.launch config:=true &
+
+roslaunch ${1}_moveit_config moveit_rviz.launch config:=true &
 sleep 1
 
 wait $(jobs -p)

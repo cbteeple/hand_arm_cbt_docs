@@ -14,6 +14,11 @@ font_awesome: "fas fa-hand-pointer"
 
 ---
 
+**(2021_07_15)**: These Instructions are now deprecated
+{: .label .label-red .fs-5}
+
+
+
 We will use the files located in "**_traj_setup/examples_**" and "**_trajectories/examples_**". When you pass the names of these files to ROS in the `roslaunch` command, you never need to use file extensions.
 
 Pick-and-place routines are just a specific ordering of [coordinated motion sequences]({{ site.baseurl }}{% link docs/tutorials/motion_sequences.md %} )
